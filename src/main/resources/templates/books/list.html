@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.otg">
+<head>
+  <meta charset="UTF-8">
+  <title>Spring framework example</title>
+</head>
+<body>
+<h1>Book List</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>publisher</th>
+  </tr>
+  <tr th:each="book : ${books}">
+    <td th:text="${book.id}">sadasd</td>
+    <td th:text="${book.title}">Spring in action</td>
+    <td th:text="${book.publisher.name}">Wrox</td>
+  </tr>
+</table>
+</body>
+</html>
